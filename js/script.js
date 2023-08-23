@@ -12,6 +12,7 @@ function login(){
 }
 
 
+
 function somar(){
     var n1 = parseInt(prompt("Digite o primeiro número"))
     var n2 = parseInt(prompt("Digite o segundo número"))
@@ -22,7 +23,23 @@ function somar(){
     console.log(resultado)
 }
 
+function nome(){
+    const nome = document.getElementById("frmNome").value
+    console.log(nome)
+    document.getElementById("exibeNome").innerHTML = nome
+}
 
+function produto(){
+    let product = document.getElementById("frmProduto").value
+    let li = document.createElement("li") 
+    li.innerHTML=product
+    // document.getElementById("produto").innerHTML = product
+    document.getElementById("produto").appendChild(li)
+    console.log(product)
+}
+
+
+//Desafio - Criar uma função que adicione, em uma lista, o nome de um produto.
 
 //Manipular o DOM
 //Document Object Model
